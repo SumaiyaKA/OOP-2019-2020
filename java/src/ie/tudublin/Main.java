@@ -6,8 +6,14 @@ public class Main
     public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new HelloProcessing());
-	}
+        processing.core.PApplet.runSketch( a, new BugZap());
+    }
+    
+    // public void BugZap()
+	// {
+	// 	String[] a = {"MAIN"};
+    //     processing.core.PApplet.runSketch( a, new BugZap());
+	// }
     
     public static void main(String[] arg)
     {
