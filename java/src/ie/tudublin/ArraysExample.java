@@ -76,6 +76,29 @@ public class ArraysExample extends PApplet
 		}
 	}
 
+	public void task1()
+	{
+		background(0, 0, 0);
+
+		// Using lines and we use the 1st data 
+		// as the 1st point of the line,
+		// the 2nd point will be the 2nd data. 
+
+		// line(10, 10, 100, 100);		// x1, y1, x2, y2
+
+		// graph size 50 until 450
+
+		for(int i = 0; i < rainFall.length - 1; i++)
+		{
+			stroke(51, 255, 255);
+			int x1 = i * 50;
+			int x2 = i * 100;
+			line(x1, 450 - rainFall[i], x2, 450 - rainFall[i+1] );
+		}
+
+
+	}
+
 	public void keyPressed()
 	{
 		if (key == ' ')
@@ -89,6 +112,8 @@ public class ArraysExample extends PApplet
 		background(0);		
 		colorMode(HSB);	
 
-		drawBarChart();
+		// drawBarChart();
+
+		task1();
 	}
 }
