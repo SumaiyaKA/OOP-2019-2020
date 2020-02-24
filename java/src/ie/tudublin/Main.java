@@ -33,10 +33,22 @@ public class Main
         processing.core.PApplet.runSketch( a, new BugZap());
     }
     
+    public void sound1()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Sound1());
+    }
+
     public void airSeaBattle()
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new AirSeaBattle());
+    }
+
+    public void soundMandala()
+    {
+        String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new SoundMandala());
     }
     
     public void dogsCats()
@@ -82,9 +94,13 @@ public class Main
     {
         Main main = new Main();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		main.arrays();        
 =======
 		main.helloArrays();        
 >>>>>>> 809ade9f27be61a429648504e17337c6c49029aa
+=======
+		main.sound1();        
+>>>>>>> 3f21efb1b5a9d3d0cbafcc1d042aa89f314fd196
     }
 }
