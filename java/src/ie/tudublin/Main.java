@@ -105,14 +105,8 @@ public class Main
     public static void main(String[] arg)
     {
         Main main = new Main();
-<<<<<<< HEAD
-<<<<<<< HEAD
-		main.arrays();        
-=======
-		main.helloArrays();        
->>>>>>> 809ade9f27be61a429648504e17337c6c49029aa
-=======
+
 		main.sound1();        
->>>>>>> 3f21efb1b5a9d3d0cbafcc1d042aa89f314fd196
+
     }
 }

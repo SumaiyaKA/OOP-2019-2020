@@ -90,10 +90,16 @@ public class Sound1 extends PApplet
 		fft.forward(ai.left);
 
 		stroke(255);
+		int highestBin = 0;
 		for(int i = 0 ; i < fft.specSize() ; i ++)
 		{
 			line(i, 0, i, fft.getBand(i) * 100);
 		}
+
+		
+		float freq1 = fft.indexToFreq(highestBin);
+
+		text("FFT Freq: " + freq1, 100, 100);
 		
 	}
 }
